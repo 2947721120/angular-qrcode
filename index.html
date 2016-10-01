@@ -110,7 +110,7 @@
 </head>
 <body data-ng-init="foo='here comes qr!';bar='https://github.com/monospaced/angular-qrcode';v=5;e='M';s=274;">
 
-  <h1>Angular QR Code</h1>
+  <h1>Angular QR 二维码</h1>
 
   <pre>&lt;qrcode&gt;&lt;/qrcode&gt;</pre>
 
@@ -122,11 +122,11 @@
       <textarea id="data" data-ng-model="foo" maxlength="2953"></textarea>
     </p>
     <p>
-      <label for="size">Size</label>
+      <label for="size">尺寸</label>
       <input id="size" type="number" data-ng-model="s">
     </p>
     <p>
-      <label for="version">Version</label>
+      <label for="version">版本</label>
       <input id="version" type="number" data-ng-model="v" min="1" max="40">
     </p>
     <p>
@@ -135,7 +135,7 @@
     </p>
   </form>
 
-  <h2>Downloadable</h2>
+  <h2>下载</h2>
 
   <qrcode version="{{v}}" error-correction-level="{{e}}" size="{{s}}" data="{{foo}}" download></qrcode>
 
@@ -145,7 +145,7 @@
 
   <form>
     <p>
-      <label for="data">Data</label>
+      <label for="data">数据</label>
       <textarea id="data" data-ng-model="bar" maxlength="2953"></textarea>
     </p>
   </form>
@@ -153,12 +153,12 @@
   <div class="footer">
 
     <small>
-      <a href="http://monospaced.github.io/">Monospaced Labs</a>
+      <a href="http://monospaced.github.io/">等宽的实验室</a>
     </small>
 
   </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+  <script src="//ajax.c2cmalls.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   <script src="//monospaced.github.io/bower-qrcode-generator/js/qrcode.js"></script>
   <script src="//monospaced.github.io/bower-qrcode-generator/js/qrcode_UTF8.js"></script>
   <script src="angular-qrcode.js"></script>
